@@ -1,8 +1,6 @@
-<div class="contenedor login">
-     
+<div class=" login">
+<div class="login-cuerpo"> 
      <?php include_once __DIR__. '/../templates/nombre-pagina.php';?>
-
-    <div class="contenedor-sm">
         <p class="descripcion-pagina">iniciar sesion</p>
         <!-- agrego un formulario con el metodo post -->
         <form class="formulario" method="POST" action="/">
@@ -29,12 +27,12 @@
 
             </div>
 
-            <input type="submit" class="boton" value="iniciar sesion">
+            <input type="submit" class="btn" value="iniciar sesion">
 
         </form>
         <div class="acciones">
-            <a href="/crear">Aun no tienes cuenta? crear una</a>
-            <a href="/olvide">Olvidaste tu password?</a>
+            <a href="/crear">crear una cuenta</a>
+            <a href="/olvide">Olvidaste tu password</a>
         </div>
     </div> <!-- contenedor sm -->
 

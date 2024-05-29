@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../public//img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body>
+<body >
 
     <?php echo $contenido; ?>
     <?php echo $script ?? ''; ?>

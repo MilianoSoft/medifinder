@@ -2,17 +2,49 @@
 @use 'base/mixins' as m;
 
 .login{
+    width: 100%;
+    height: 100vh;
+    background-color: v.$azul;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: white;
+    }
+   .login-cuerpo{
+    text-align: center;
+    width: 400px;
+    border: solid 1px white;
+    padding: 2rem;
     .uptask{
-       background: linear-gradient(to right,v.$rojo-ministerio 0%,lighten(v.$rojo-ministerio,30%) 100%);
-      color: transparent;
-       background-clip:text;
-       font-size: 6rem;
-       text-align: center;
-       @include m.tablet{
-        font-size: 10rem;
+        font-size: 2rem;
+        color: white;
        }
-    }
-    .boton{
-        @include m.boton(v.$rojo-ministerio,v.$blanco);
-    }
+
+       .btn{
+          border: none;
+          color: white;
+          background-color: v.$indigo;
+          padding: 1rem;
+         display: flex;
+       }
+       .campo{
+        display: block;
+        label{
+            color: white;
+            margin-bottom: 1rem;
+        }
+        input{
+            width: 100%;
+        }
+        
+       }
+
+       .acciones{
+        a{
+            color: white;
+        }
+       }
+       
+   }
 }

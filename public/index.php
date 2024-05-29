@@ -2,15 +2,20 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
+use Controllers\HomeController;
 use Controllers\LoginController;
 use MVC\Router;
 $router = new Router();
 
-//LOGIN METODOS 
+//RUTAS PARA LA PAGINA PRINCIPAL EL HOME
+//accedemos a la pagina principal 
+$router->get('/',[HomeController::class,'home']);
+
+//RUTAS DEL LOGIN DEL SISTEMA
 //metodo para llamar el login
-$router->get('/',[LoginController::class,'login']);
+$router->get('/login',[LoginController::class,'login']);
 //metodo para enviar el login
-$router->post('/',[LoginController::class,'login']);
+$router->post('/login',[LoginController::class,'login']);
 //logaut para cerrrar la sesion del usuario
 $router->get('/logout',[LoginController::class,'logout']);
 

@@ -1,6 +1,6 @@
 <?php
 
-$db = mysqli_connect('localhost', 'root', '', 'Uptask_mvc');
+$db = mysqli_connect('localhost', 'root', '', 'sisMedico');
 
 if (!$db) {
     echo "Error: No se pudo conectar a MySQL.";
