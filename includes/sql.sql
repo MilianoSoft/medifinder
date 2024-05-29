@@ -56,8 +56,8 @@ CREATE TABLE consulta (
     diagnostico TEXT,
     tratamiento TEXT,
     costo DECIMAL(10, 2), -- Agregamos un campo para el costo de la consulta
-    FOREIGN KEY (id_paciente) REFERENCES paciente(id_paciente),
-    FOREIGN KEY (id_medico) REFERENCES medico(id_medico)
+    FOREIGN KEY (id_paciente) REFERENCES paciente(id),
+    FOREIGN KEY (id_medico) REFERENCES medico(id)
 );
 
 -- Tabla cita
@@ -65,12 +65,14 @@ CREATE TABLE cita (
     id INT AUTO_INCREMENT PRIMARY KEY,
     id_paciente INT,
     id_medico INT,
+    id_consultorio int,
     fecha_cita DATE,
     hora_cita TIME,
     estado_cita VARCHAR(20),
     comentarios TEXT,
     FOREIGN KEY (id_paciente) REFERENCES paciente(id),
     FOREIGN KEY (id_medico) REFERENCES medico(id)
+    FOREIGN KEY (id_consultorio) REFERENCES cosultorio(id)
 );
 
 -- Tabla medico_seguro
@@ -99,8 +101,8 @@ CREATE TABLE horario_medico_consultorio (
     dia_semana ENUM('Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),
     hora_inicio TIME,
     hora_fin TIME,
-    FOREIGN KEY (id_medico) REFERENCES medico(id_medico),
-    FOREIGN KEY (id_consultorio) REFERENCES consultorio(id_consultorio)
+    FOREIGN KEY (id_medico) REFERENCES medico(id),
+    FOREIGN KEY (id_consultorio) REFERENCES consultorio(id)
 );
 
 -- Tabla consultorio
