@@ -32,7 +32,6 @@ CREATE TABLE medico (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255),
     apellido VARCHAR(255),
-    especialidad VARCHAR(255),
     telefono VARCHAR(20)
 );
 
@@ -83,6 +82,22 @@ CREATE TABLE medico_seguro (
     FOREIGN KEY (id_seguro) REFERENCES seguro(id),
     PRIMARY KEY (id_medico, id_seguro)
 );
+-- Tabla medico_especialidad
+CREATE TABLE medico_especialidad (
+    id_medico INT,
+    id_especialidad INT,
+    FOREIGN KEY (id_medico) REFERENCES medico(id),
+    FOREIGN KEY (id_especialidad) REFERENCES especialidad(id),
+    PRIMARY KEY (id_medico, id_especialidad)
+);
+-- Tabla clinica_ciudad
+CREATE TABLE clinica_ciudad (
+    id_clinica INT,
+    id_ciudad INT,
+    FOREIGN KEY (id_clinica) REFERENCES clinica(id),
+    FOREIGN KEY (id_ciudad) REFERENCES ciudad(id),
+    PRIMARY KEY (id_clinica, id_ciudad)
+);
 
 -- Agregar una columna a las tablas paciente y medico para almacenar el ID de usuario
 ALTER TABLE paciente
@@ -111,5 +126,5 @@ CREATE TABLE consultorio (
     nombre VARCHAR(255),
     direccion VARCHAR(255),
     id_clinica INT,
-    FOREIGN KEY (id_clinica) REFERENCES clinica(id_clinica)
+    FOREIGN KEY (id_clinica) REFERENCES clinica(id)
 );

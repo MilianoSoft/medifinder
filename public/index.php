@@ -10,6 +10,8 @@ $router = new Router();
 //RUTAS PARA LA PAGINA PRINCIPAL EL HOME
 //accedemos a la pagina principal 
 $router->get('/',[HomeController::class,'home']);
+$router->get('/finder',[HomeController::class,'finder']);
+$router->post('/finder',[HomeController::class,'finder']);
 
 //RUTAS DEL LOGIN DEL SISTEMA
 //metodo para llamar el login

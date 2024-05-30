@@ -13,6 +13,7 @@ use MVC\Router;
 //creo la clase Login Controller
 class HomeController
 {
+    
 
     //funsion publica para acceder desde cualquier lugar
     //funsion estatica desde se llama sintener que instanciar la clase
@@ -32,5 +33,21 @@ class HomeController
             'seguro' => $seguro,
             
         ]);
+    }
+
+    public static function finder(Router $router){
+        $ciudad = Ciudad::all();
+        $clinica = Clinica::all();
+        $especialidad = Especialidad::all();
+        $seguro = Seguro::all();
+
+        $router->render('home/finder', [
+
+            'ciudad' => $ciudad,
+            'clinica' => $clinica,
+            'especialidad' => $especialidad,
+            'seguro' => $seguro,
+        ]);
+
     }
 }

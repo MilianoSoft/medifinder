@@ -1,0 +1,1 @@
+document.getElementById("miInput").addEventListener("keydown",(function(e){"13"!==e.key&&"enter"!==e.key||document.getElementById("miFormulario").submit()}));

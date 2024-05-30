@@ -1,0 +1,95 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pagina-buscador {
+
+    //secion del navbar de la pagina de busquedad
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        h2 {
+            color: v.$gris;
+            padding-left: 2rem;
+
+            span {
+                color: aquamarine;
+            }
+        }
+
+        div {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 3rem;
+            gap: 2rem;
+
+            a {
+                color: v.$gris;
+                font-size: 2rem;
+
+            }
+
+            div {
+                .boton {
+                    border: solid 1px v.$morado;
+                    padding: 0 2rem 0 2rem;
+
+                }
+
+                .boton:hover {
+                    background-color: white;
+                    color: indigo;
+                    border-color: aquamarine;
+                }
+            }
+        }
+    }
+
+    //fin del navbar
+
+    //inicio del baner
+
+    .baner-buscador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 2rem;
+        background-color: v.$morado;
+        height: 10rem;
+        -webkit-box-shadow: 10px 1px 16px 0px rgba(0, 0, 0, 0.39);
+        -moz-box-shadow: 10px 1px 16px 0px rgba(0, 0, 0, 0.39);
+        box-shadow: 10px 1px 16px 0px rgba(0, 0, 0, 0.39);
+
+        //clase del primer form para buscar
+        .serch{
+            position: relative;
+            width: 300px;
+            input{
+                width: 100%;
+                padding: 0.7rem;
+                outline: none;
+                background-color:rgb(245, 242, 242);
+                border: none;
+            }
+            .mostrar{
+               position: absolute;
+               width: 300px;
+               height: 200px;
+               overflow-y: scroll;
+               display: flex;
+               flex-direction: column;
+               background-color:rgb(245, 242, 242);
+               border-top: none;
+               padding: 1rem;
+            }
+        }
+        
+       
+        
+    }
+}
