@@ -49,6 +49,27 @@
 
       </form>
     </div>
+    <!-- seccion de los perfiles de los medicos  -->
+    <section class="medicos">
+      <!-- tarjeta del medico -->
+    <div class="profile-card">
+        <div class="profile-image">
+            <img src="/img/icono-medico.png" alt="Foto del Médico">
+        </div>
+        <div class="profile-info">
+            <h2>Dr. Juan Pérez</h2>
+            <h3>Cardiólogo</h3>
+            <p> Tel: 809-8239-4040</p>
+            <p>Experiencia: 15 años</p>
+            <p>Clinica: Hospital General</p>
+            <a class="btn btn-cita" href="#">agendar cita</a>
+            <a class="btn btn-perfil" href="#">perfil completo</a>
+        </div>
+    </div>
+
+    </section>
   </main>
 
 </div>
+
+<?php include_once __DIR__ . '../../templates/footer.php';?>
