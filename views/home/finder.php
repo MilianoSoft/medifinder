@@ -1,6 +1,6 @@
 <div class="pagina-buscador">
   <!-- barra de navegacion -->
-  <nav class="">
+  <nav class="navbar-oficial">
     <a href="/">
       <h2>Medi<span>Finder</span></h2>
     </a>
@@ -9,7 +9,7 @@
       <a href="/nosotros">Nosotros</a>
       <div>
         <a href="/login" class=" boton">Entrar</a>
-        <a href="/registrate" class="boton">Registrate</a>
+        <a href="/crear" class="boton">Registrate</a>
       </div>
     </div>
   </nav>
@@ -54,7 +54,7 @@
       <!-- tarjeta del medico -->
     <div class="profile-card">
         <div class="profile-image">
-            <img src="/img/icono-medico.png" alt="Foto del Médico">
+            <img src="/img/image.png" alt="Foto del Médico">
         </div>
         <div class="profile-info">
             <h2>Dr. Juan Pérez</h2>
@@ -62,8 +62,8 @@
             <p> Tel: 809-8239-4040</p>
             <p>Experiencia: 15 años</p>
             <p>Clinica: Hospital General</p>
-            <a class="btn btn-cita" href="#">agendar cita</a>
-            <a class="btn btn-perfil" href="#">perfil completo</a>
+            <a class="btn btn-cita" href="/agendarCita">agendar cita</a>
+            <a class="btn btn-perfil" href="/medicoPerfil">perfil completo</a>
         </div>
     </div>
 

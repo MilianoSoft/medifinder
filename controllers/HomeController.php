@@ -50,4 +50,19 @@ class HomeController
         ]);
 
     }
+    public static function medicoPerfil(Router $router){
+        $ciudad = Ciudad::all();
+        $clinica = Clinica::all();
+        $especialidad = Especialidad::all();
+        $seguro = Seguro::all();
+
+        $router->render('home/medicoPerfil', [
+
+            'ciudad' => $ciudad,
+            'clinica' => $clinica,
+            'especialidad' => $especialidad,
+            'seguro' => $seguro,
+        ]);
+
+    }
 }

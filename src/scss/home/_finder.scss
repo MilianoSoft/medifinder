@@ -3,52 +3,6 @@
 
 .pagina-buscador {
 
-    //secion del navbar de la pagina de busquedad
-    nav {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        padding: 0;
-
-        h2 {
-            color: v.$gris;
-            padding-left: 2rem;
-
-            span {
-                color: aquamarine;
-            }
-        }
-
-        div {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-right: 3rem;
-            gap: 2rem;
-
-            a {
-                color: v.$gris;
-                font-size: 2rem;
-
-            }
-
-            div {
-                .boton {
-                    border: solid 1px v.$morado;
-                    padding: 0 2rem 0 2rem;
-
-                }
-
-                .boton:hover {
-                    background-color: white;
-                    color: indigo;
-                    border-color: aquamarine;
-                }
-            }
-        }
-    }
-
     //fin del navbar
 
     //inicio del baner
@@ -104,10 +58,11 @@
         }
         
         .profile-image img {
-            width: 10rem;
-            height: 10rem;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
+            width: 12rem;
+            height: 12rem;
+            border: solid 0.5rem v.$blanco;
+            border-radius: 50%;
+            padding: 0.5rem;
         }
         
         .profile-info {

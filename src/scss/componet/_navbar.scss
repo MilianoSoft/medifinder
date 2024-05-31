@@ -1,0 +1,48 @@
+ //secion del navbar de la pagina de busquedad
+ @use 'base/variables'as v;
+ @use 'base/mixins'as m;
+
+ .navbar-oficial {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    h2 {
+        color: v.$gris;
+        padding-left: 2rem;
+
+        span {
+            color: aquamarine;
+        }
+    }
+
+    div {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 3rem;
+        gap: 2rem;
+
+        a {
+            color: v.$gris;
+            font-size: 2rem;
+
+        }
+
+        div {
+            .boton {
+                border: solid 1px v.$morado;
+                padding: 0 2rem 0 2rem;
+
+            }
+
+            .boton:hover {
+                background-color: white;
+                color: indigo;
+                border-color: aquamarine;
+            }
+        }
+    }
+}

@@ -1,15 +1,15 @@
-<div class="contenedor login">
+<div >
 <?php include_once __DIR__. '/../templates/nombre-pagina.php';?> 
 
-    <div class="contenedor-sm">
-        <p class="descripcion-pagina">Crea Tu Cuenta</p>
+    <div>
+        <p >Crea Tu Cuenta</p>
         <!-- agrego un formulario con el metodo post -->
 
         <?php include_once __DIR__. '/../templates/alertas.php';?> 
 
-        <form class="formulario" method="POST" action="/crear">
+        <form  method="POST" action="/crear">
             <!-- nombre -->
-        <div class="campo">
+        <div >
                 <label for="email">nombre</label>
                 <input 
                     type="nombre"
@@ -21,7 +21,7 @@
 
             </div>
             <!-- email -->
-        <div class="campo">
+        <div >
                 <label for="email">email</label>
                 <input 
                     type="email"
@@ -33,7 +33,7 @@
 
             </div>
             <!-- password -->
-        <div class="campo">
+        <div>
                 <label for="password">password</label>
                 <input 
                     type="password"
@@ -45,7 +45,7 @@
 
             </div>
             <!-- Repetir password -->
-        <div class="campo">
+        <div >
                 <label for="password2">repetir password</label>
                 <input 
                     type="password"
@@ -56,10 +56,10 @@
 
             </div>
 
-            <input type="submit" class="boton" value="crear cuenta">
+            <input type="submit" value="crear cuenta">
 
         </form>
-        <div class="acciones">
+        <div>
             <a href="/">iniciar sesion</a>
             <a href="/olvide">Olvidaste tu password?</a>
         </div>
