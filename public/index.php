@@ -13,6 +13,7 @@ $router->get('/',[HomeController::class,'home']);
 $router->get('/finder',[HomeController::class,'finder']);
 $router->post('/finder',[HomeController::class,'finder']);
 $router->get('/medicoPerfil',[HomeController::class,'medicoPerfil']);
+$router->post('/medicoPerfil',[HomeController::class,'medicoPerfil']);
 
 //RUTAS DEL LOGIN DEL SISTEMA
 

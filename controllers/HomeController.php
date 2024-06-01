@@ -56,6 +56,10 @@ class HomeController
         $especialidad = Especialidad::all();
         $seguro = Seguro::all();
 
+        if($_SERVER['REQUEST_METHOD']==="POST"){
+            debuguear($_POST);
+        }
+
         $router->render('home/medicoPerfil', [
 
             'ciudad' => $ciudad,

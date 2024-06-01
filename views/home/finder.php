@@ -62,8 +62,76 @@
             <p> Tel: 809-8239-4040</p>
             <p>Experiencia: 15 años</p>
             <p>Clinica: Hospital General</p>
-            <a class="btn btn-cita" href="/agendarCita">agendar cita</a>
+
+            <button type="button" class=" btn btn-cita " data-bs-toggle="modal" data-bs-target="#exampleModal">agendar cita</button>
             <a class="btn btn-perfil" href="/medicoPerfil">perfil completo</a>
+
+             <!-- Modal agendar cita -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        
+        <div class="modal-dialog">
+        <form  method="post">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">agendar cita</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  
+                    <div class="modal-body">
+                        <!-- inicio de calendario -->
+                     
+                            <fieldset>
+                                <label for="nombre"> doctor: dr.juana perez</label>
+                                <input type="hidden" name="doctor" value="juana perez">
+                                <div>
+                                    <label for="consultorio">consultorio</label>
+                                    <select name="consultorio" id="consultorio">
+                                        <option value="1"> consultorio bonao</option>
+                                        <option value="2"> consultorio la vega</option>
+                                        <option value="3"> consultorio moca</option>
+                                        <option value="4"> consultorio santo domingo</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="dosColumnas">
+                                <div class="calendario">
+                                    <div class="controls">
+                                        <button type="button" id="prevMonth" class="btn btn-info">Anterior</button>
+                                        <span class="nombre-mes" id="currentMonth"></span>
+                                        <button type="button" id="nextMonth" class="btn btn-info">Siguiente</button>
+                                    </div>
+                                    <div id="calendar"></div>
+                                    <input type="hidden" name="fecha" id="selectedDate">
+                                   
+                                </div>
+                                <div class="horario">
+                                  <p>Horas disponibles</p>
+                                  <label id="selectedDayLabel">Día seleccionado: </label>
+                                    <div class="horas">
+                                        <div> 7:00 am</div>
+                                        <div> 7:30 am</div>
+                                        <div> 8:00 am</div>
+                                        <div> 8:30 am</div>
+                                        <div> 9:00 am</div>
+                                        <div> 9:30 am</div>
+                                        <div> 10:00 am</div>
+                                        <div> 10:30 am</div>
+                                    </div>
+                                    <input type="hidden" name="hora" id="selectedTime">
+                                </div>
+                            </fieldset>
+                            <script src="/build/js/calendar.js"></script>
+                        <!-- fin de calendario -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">salir</button>
+                        <button type="submit" class="btn btn-primary">agendar cita</button>
+                    </div>
+                   </form>   
+                </div>
+            </div>
+        </div> <!-- agendar cita modal -->
+           
         </div>
     </div>
 
