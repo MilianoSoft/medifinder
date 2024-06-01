@@ -29,70 +29,130 @@
 
             <div class="contenedor-galeria">
                 <h2>Seguros Aceptados</h2>
-            <div class="galeria">
-                <div class="contenedor-imagen">
-                    <figure>
-                    <img src="/img/imagen-seguros/ars-semma.png" alt="">
-                    </figure>
-                </div>
-                <div class="contenedor-imagen">
-                    <figure>
-                    <img src="/img/imagen-seguros/ars-aps.png" alt="">
-                    </figure>
-                </div>
-                <div class="contenedor-imagen">
-                    <figure>
-                    <img src="/img/imagen-seguros/ars-cmd.png" alt="">
-                    </figure>
-                </div>
-                <div class="contenedor-imagen">
-                    <figure>
-                    <img src="/img/imagen-seguros/ars-futuro.png" alt="">
-                    </figure>
+                <div class="galeria">
+                    <div class="contenedor-imagen">
+                        <figure>
+                            <img src="/img/imagen-seguros/ars-semma.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <figure>
+                            <img src="/img/imagen-seguros/ars-aps.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <figure>
+                            <img src="/img/imagen-seguros/ars-cmd.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <figure>
+                            <img src="/img/imagen-seguros/ars-futuro.png" alt="">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
     </div> <!-- seccion medico 2 columnas -->
-    <div class="servicios">
+    <div class="servicios gtco-testimonials">
         <h3>mi servicios</h3>
+        <!-- servicios card -->
         <div class="galeria-servico">
-            <div class="tarjeta-servico">
-                <h4>arritmias</h4>
-                <p>Ritmos cardíacos anormales que causan que los latidos del corazón sean irregulares o muy rápidos o lentos</p>
-            </div>
-            <div class="tarjeta-servico">
-                <h4>enfermedad de la alteria coronaria</h4>
-                <p>Estrechamiento u obstrucción de arterias del corazón que dificulta el flujo sanguíneo.</p>
-            </div>
-            <div class="tarjeta-servico">
-                <h4>ataques al corazon</h4>
-                <p>Una obstrucción repentina en el flujo sanguíneo al corazón que daña tejido.</p>
-            </div>
-            <div class="tarjeta-servico">
-                <h4>insuficiencia cardiaca</h4>
-                <p>El corazón ya no es capaz de bombear una cantidad de sangre suficiente para satisfacer las necesidades del cuerpo.</p>
-            </div>
-            <div class="tarjeta-servico">
-                <h4>colesterol alto</h4>
-                <p>Niveles elevados de grasa en la sangre que pueden causar que se obstruyan arterias</p>
-            </div>
-            <div class="tarjeta-servico">
-                <h4>presion sanguinia alta</h4>
-                <p>Un nivel de presión constantemente elevado sobre las paredes de las arterias</p>
-            </div>
-            <div class="tarjeta-servico">
-                <h4>enfermedad alterial periferica</h4>
-                <p>Estrechamiento de las arterias en los brazos, las piernas o el cuello y la cabeza</p>
-            </div>
-            <div class="tarjeta-servico">
-                <h4>enfermedad de la valvula del corazon</h4>
-                <p>Mal funcionamiento de una o más válvulas del corazón que afecta el flujo de la sangre</p>
+            <div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5>arritmias
+                        </h5>
+                        <p class="card-text">Ritmos cardíacos anormales que causan que los latidos del corazón sean irregulares o muy rápidos o lentos</p>
+                    </div>
+                </div>
+            </div> <!-- fin card -->
+            <div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5>arritmias
+                        </h5>
+                        <p class="card-text">Ritmos cardíacos anormales que causan que los latidos del corazón sean irregulares o muy rápidos o lentos</p>
+                    </div>
+                </div>
+            </div> <!-- fin card -->
+            <div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5>arritmias
+                        </h5>
+                        <p class="card-text">Ritmos cardíacos anormales que causan que los latidos del corazón sean irregulares o muy rápidos o lentos</p>
+                    </div>
+                </div>
+            </div> <!-- fin card -->
+            <div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5>arritmias
+                        </h5>
+                        <p class="card-text">Ritmos cardíacos anormales que causan que los latidos del corazón sean irregulares o muy rápidos o lentos</p>
+                    </div>
+                </div>
+            </div> <!-- fin card -->
+            <div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5>arritmias
+                        </h5>
+                        <p class="card-text">Ritmos cardíacos anormales que causan que los latidos del corazón sean irregulares o muy rápidos o lentos</p>
+                    </div>
+                </div>
+            </div> <!-- fin card -->
+            <div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5>arritmias
+                        </h5>
+                        <p class="card-text">Ritmos cardíacos anormales que causan que los latidos del corazón sean irregulares o muy rápidos o lentos</p>
+                    </div>
+                </div>
+            </div> <!-- fin card -->
+
+        </div>
+        <!-- testimonios de clientes -->
+        <div class="gtco-testimonials">
+            <h2>Que dicen mis pacientes</h2>
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div>
+                    <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
+                        <div class="card-body">
+                            <h5>Ronne Galle <br />
+                                <span> Project Manager </span>
+                            </h5>
+                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                                impedit quo minus id quod maxime placeat ” </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+                        <div class="card-body">
+                            <h5>Missy Limana<br />
+                                <span> Engineer </span>
+                            </h5>
+                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                                impedit quo minus id quod maxime placeat ” </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
+                        <div class="card-body">
+                            <h5>Martha Brown<br />
+                                <span> Project Manager </span>
+                            </h5>
+                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                                impedit quo minus id quod maxime placeat ” </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div>
-        <h2>comentarios</h2>
-    </div>
-
 </main>
+
+<?php include_once __DIR__ . '../../templates/footer.php'; ?>
