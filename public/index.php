@@ -2,21 +2,16 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
-use Controllers\HomeController;
+use Controllers\DasboardController;
 use Controllers\LoginController;
 use MVC\Router;
 $router = new Router();
 
 //RUTAS PARA LA PAGINA PRINCIPAL EL HOME
 //accedemos a la pagina principal 
-$router->get('/',[HomeController::class,'home']);
-$router->get('/finder',[HomeController::class,'finder']);
-$router->post('/finder',[HomeController::class,'finder']);
-$router->get('/medicoPerfil',[HomeController::class,'medicoPerfil']);
-$router->post('/medicoPerfil',[HomeController::class,'medicoPerfil']);
 
 //RUTAS DEL LOGIN DEL SISTEMA
-
+$router->get('/',[LoginController::class,'home']);
 //metodo para llamar el login
 $router->get('/login',[LoginController::class,'login']);
 //metodo para enviar el login
@@ -45,7 +40,14 @@ $router->post('/restablecer',[LoginController::class,'restablecer']);
 $router->get('/mensaje',[LoginController::class,'mensaje']);
 $router->get('/confirmar',[LoginController::class,'confirmar']);
 
-
+//PANEL DE ADMINISTRACION DASBOARD
+//rutas del dasboard
+$router->get('/dasboard',[DasboardController::class,'index']);
+$router->post('/dasboard',[DasboardController::class,'index']);
+$router->get('/crear_proyecto',[DasboardController::class,'crear_proyecto']);
+$router->post('/crear_proyecto',[DasboardController::class,'crear_proyecto']);
+$router->get('/perfil',[DasboardController::class,'perfil']);
+$router->post('/perfil',[DasboardController::class,'perfil']);
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();

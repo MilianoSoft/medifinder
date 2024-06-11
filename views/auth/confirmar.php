@@ -1,9 +1,9 @@
-<div class="contenedor login">
+<div class="form-register aviso">
 <?php include_once __DIR__. '/../templates/nombre-pagina.php';?> 
-
-    <div class="contenedor-sm">
+<?php include_once __DIR__. '/../templates/alertas.php';?> 
+    <div>
        <div class="acciones">
-        <a href="/" class="boton">iniciar sesion</a>
+        <a href="/login" class="botons mibotons">iniciar sesion</a>
        </div>
-
+</div>
 </div>

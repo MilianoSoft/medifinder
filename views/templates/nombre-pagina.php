@@ -1,2 +1,2 @@
 
-<h1 class="uptask">MediFinder</h1>
+<h2 class="uptask">Medi<span style="color:aquamarine;">Finder</span></h2>

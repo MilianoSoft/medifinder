@@ -1,6 +1,6 @@
 <?php
 
-$db = mysqli_connect('localhost', 'root', '', 'sisMedico');
+$db = mysqli_connect('localhost', 'root', '', 'getmedico');
 
 if (!$db) {
     echo "Error: No se pudo conectar a MySQL.";

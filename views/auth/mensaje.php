@@ -1,10 +1,10 @@
-<div class="contenedor login">
+<div class="form-register aviso">
 <?php include_once __DIR__. '/../templates/nombre-pagina.php';?> 
 
-    <div class="contenedor-sm">
-        <p class="descripcion-pagina">hemos enviado las confirmaciones a seguir para validar tu cuenta</p>
+    <div>
+        <p>Revisa tu correo enviamos las instruciones a seguir para validar</p>
+        <p> tu cuenta con nosotros</p>
         <!-- agrego un formulario con el metodo post -->
-       
-        <a href="/"type="button" class="boton"> login</a>
-
+   </div>
+   <a href="/login"type="button" class="botons miBoton"> login</a>
 </div>

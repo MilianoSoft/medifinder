@@ -1,69 +1,18 @@
-<div >
+<form class="form-register" action="/crear" method="post">
 <?php include_once __DIR__. '/../templates/nombre-pagina.php';?> 
+<?php include_once __DIR__. '/../templates/alertas.php';?> 
 
-    <div>
-        <p >Crea Tu Cuenta</p>
-        <!-- agrego un formulario con el metodo post -->
-
-        <?php include_once __DIR__. '/../templates/alertas.php';?> 
-
-        <form  method="POST" action="/crear">
-            <!-- nombre -->
-        <div >
-                <label for="email">nombre</label>
-                <input 
-                    type="nombre"
-                    id="nombre"
-                    placeholder="tu nombre"
-                    name="nombre"
-                    value="<?php $usuario->nombre;?>"
-                >
-
-            </div>
-            <!-- email -->
-        <div >
-                <label for="email">email</label>
-                <input 
-                    type="email"
-                    id="email"
-                    placeholder="tu email"
-                    name="email"
-                    value="<?php $usuario->email;?>"
-                >
-
-            </div>
-            <!-- password -->
-        <div>
-                <label for="password">password</label>
-                <input 
-                    type="password"
-                    id="password"
-                    placeholder="contraseña"
-                    name="password"
-
-                >
-
-            </div>
-            <!-- Repetir password -->
-        <div >
-                <label for="password2">repetir password</label>
-                <input 
-                    type="password"
-                    id="password2"
-                    placeholder="repetir contraseña"
-                    name="password2"
-                >
-
-            </div>
-
-            <input type="submit" value="crear cuenta">
-
-        </form>
-        <div>
-            <a href="/">iniciar sesion</a>
-            <a href="/olvide">Olvidaste tu password?</a>
-        </div>
-    </div> <!-- contenedor sm -->
-
-
-</div>
+    <h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="nombre" id="nombres" placeholder="Ingrese su Nombre" value="<?php echo $usuario->nombre;?>">
+    <input class="controls" type="text" name="apellido" id="apellidos" placeholder="Ingrese su Apellido" value="<?php echo $usuario->apellido;?>">
+    <input class="controls" type="tel" name="telefono" id="phone" placeholder="Su telefono" value="<?php echo $usuario->telefono;?>">
+    <input class="controls" type="email" name="email" id="correo" placeholder="Ingrese su Correo" value="<?php echo $usuario->email;?>">
+    <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+    <div class="tipo">
+        <p>Eres un</p>
+        <label for="paciente"> <input  type="radio" name="tipo" value="1"> paciente</label>
+        <label for="medico"> <input  type="radio" name="tipo" value="2"> medico</label>
+    </div>
+    <input class="botons  miBoton" type="submit" value="Registrarme">
+  </form>
+ 

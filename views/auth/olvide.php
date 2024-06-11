@@ -1,31 +1,19 @@
-<div class="contenedor login">
-<?php include_once __DIR__. '/../templates/nombre-pagina.php';?> 
 
-    <div class="contenedor-sm">
-        <p class="descripcion-pagina">olvidaste tu contraseña</p>
-        <!-- agrego un formulario con el metodo post -->
-        <form class="formulario" method="POST" action="/olvide">
-    
+
+        <form class="form-register aviso" method="post" action="/olvide">
+        <?php include_once __DIR__. '/../templates/nombre-pagina.php';?>
+        <?php include_once __DIR__. '/../templates/alertas.php';?>
+         <?php if($mostrar):?>
+        <p>olvidaste tu contraseña</p>
             <!-- email -->
-        <div class="campo">
-                <label for="email">email</label>
-                <input 
-                    type="email"
-                    id="email"
-                    placeholder="tu email"
-                    name="email"
-                >
-
-            </div>
-        
-            <input type="submit" class="boton" value="Enviar Instrucciones">
-
-        </form>
-        <div class="acciones">
+            <input class="controls" type="email" name="email" id="correo" placeholder="Ingrese su Correo">
+            <input class="botons  miBoton" type="submit" value="Enviar Instruciones">
+            <div class="acciones">
             <a href="/">iniciar sesion</a>
             <a href="/crear">Aun no tienes cuenta? crear una</a>
         </div>
-    </div> <!-- contenedor sm -->
+        <?php endif; ?>
+        </form>
+    
 
 
-</div>
