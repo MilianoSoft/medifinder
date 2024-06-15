@@ -11,12 +11,14 @@ class DasboardController extends ActiveRecord{
     public static function index( Router $router){
 
         $titulo = 'dasboard';
+        $subtitulo="bienvenido al tablero principal";
         session_start();
         $tipo = $_SESSION['tipo'];
         isAuth();//valida la sesion
         $router->render('dasboard/index',[
            'titulo'=>$titulo,
-           'tipo'=>$tipo
+           'tipo'=>$tipo,
+           'subtitulo'=>$subtitulo
         ]);
     }
 
