@@ -10,11 +10,13 @@ class DasboardController extends ActiveRecord{
 
     public static function index( Router $router){
 
-        $titulo = 'citas agendadas';
+        $titulo = 'dasboard';
         session_start();
+        $tipo = $_SESSION['tipo'];
         isAuth();//valida la sesion
         $router->render('dasboard/index',[
-           'titulo'=>$titulo
+           'titulo'=>$titulo,
+           'tipo'=>$tipo
         ]);
     }
 
@@ -24,9 +26,11 @@ class DasboardController extends ActiveRecord{
         $titulo = 'crear cita';
         session_start();
         isAuth();//valida la sesion
+        $tipo = $_SESSION['tipo'];
         $router->render('dasboard/crear_proyecto',[
            'titulo'=>$titulo,
-           'alertas'=>$alertas
+           'alertas'=>$alertas,
+           'tipo'=>$tipo
         ]);
     }
     //metodo del perfl del usuario
@@ -34,9 +38,11 @@ class DasboardController extends ActiveRecord{
 
         $titulo = 'perfil';
         session_start();
+        $tipo = $_SESSION['tipo'];
         isAuth();//valida la sesion
         $router->render('dasboard/perfil',[
-           'titulo'=>$titulo
+           'titulo'=>$titulo,
+           'tipo'=>$tipo
         ]);
     }
 

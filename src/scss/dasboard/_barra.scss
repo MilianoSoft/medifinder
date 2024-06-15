@@ -5,11 +5,11 @@
     background-color: v.$blanco;
     padding: 1rem 2rem;
     box-shadow: 1px 12px 9px -13px rgb(0, 0, 0,.4);
-    @include m.tablet{
+   
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: center;
-    }
+   
     p{
         margin: 0;
         font-size: 1.4rem;
@@ -26,4 +26,44 @@
         padding: 1rem;
         border-radius: .5rem;
     }
+
+    .usuario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        .foto{
+            width: 30px;
+            margin-right: 1rem;
+        }
+        p{
+            font-size:1.5rem;
+            margin-right: 2rem;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    }
+    .input{
+        max-width:auto;
+        padding: .5rem;
+        margin-left: 2rem;
+        padding-right: 3rem;
+        @include m.tablet{
+            width: 30rem;
+            margin: 0;
+        }
+
+    }
+    
+   .form{
+    position: relative;
+    .buscar-icono{
+        font-size: 1.5rem;
+        width: 2rem;
+        background:transparent;
+        position: absolute;
+        top: .5rem;
+        left: 27rem;
+    }
+   }
 }

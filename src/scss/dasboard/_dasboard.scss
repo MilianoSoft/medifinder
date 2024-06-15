@@ -4,10 +4,12 @@
 .dasboard{
 
     background-color: v.$gris-claro;
-   @include m.tablet{
-         display: flex;
-         height: 100vh;
-   }
+    display: flex;
+    height: 100vh;
+    display: block;
+    @include m.tablet{
+     display: flex;
+  }
 
    .principal{
 
