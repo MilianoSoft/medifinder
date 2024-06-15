@@ -44,8 +44,8 @@ $router->get('/confirmar',[LoginController::class,'confirmar']);
 //rutas del dasboard
 $router->get('/dasboard',[DasboardController::class,'index']);
 $router->post('/dasboard',[DasboardController::class,'index']);
-$router->get('/crear_proyecto',[DasboardController::class,'crear_proyecto']);
-$router->post('/crear_proyecto',[DasboardController::class,'crear_proyecto']);
+$router->get('/panel',[DasboardController::class,'panel']);
+$router->post('/panel',[DasboardController::class,'panel']);
 $router->get('/perfil',[DasboardController::class,'perfil']);
 $router->post('/perfil',[DasboardController::class,'perfil']);
 

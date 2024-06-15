@@ -7,4 +7,4 @@
 
 <!-- contenido del dasboard -->
 <div class="contenido">
- <h2 class="nombre-pagina"><?php echo($titulo);?></h2>
+ <h2 class="nombre-pagina left"><?php echo($titulo);?></h2>

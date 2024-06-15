@@ -11,25 +11,23 @@ class DasboardController extends ActiveRecord{
     public static function index( Router $router){
 
         $titulo = 'dasboard';
-        $subtitulo="bienvenido al tablero principal";
         session_start();
         $tipo = $_SESSION['tipo'];
         isAuth();//valida la sesion
         $router->render('dasboard/index',[
            'titulo'=>$titulo,
-           'tipo'=>$tipo,
-           'subtitulo'=>$subtitulo
+           'tipo'=>$tipo
         ]);
     }
 
     //metodo de crear proyectos
-    public static function crear_proyecto( Router $router){
+    public static function panel( Router $router){
         $alertas=[];
-        $titulo = 'crear cita';
+        $titulo = "bienvenido al tablero principal";
         session_start();
         isAuth();//valida la sesion
         $tipo = $_SESSION['tipo'];
-        $router->render('dasboard/crear_proyecto',[
+        $router->render('dasboard/panel',[
            'titulo'=>$titulo,
            'alertas'=>$alertas,
            'tipo'=>$tipo
