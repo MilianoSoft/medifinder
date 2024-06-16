@@ -18,7 +18,7 @@
             <div class="icono"><img src="/img/icons/citas.png" alt="icono-cita"></div>Agenda
         </a>
 
-        <a class="<?php echo ($titulo == 'medicos') ? 'activo' : ''; ?>" href="#">
+        <a class="<?php echo ($titulo == 'paciente') ? 'activo' : ''; ?>" href="/paciente">
             <div class="icono"><img src="/img/icons/medicos.png" alt="icono-doctor"></div>Paciente
         </a>
 

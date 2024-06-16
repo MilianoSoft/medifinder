@@ -21,13 +21,13 @@ class DasboardController extends ActiveRecord{
     }
 
     //metodo de crear proyectos
-    public static function panel( Router $router){
+    public static function paciente( Router $router){
         $alertas=[];
-        $titulo = "bienvenido al tablero principal";
+        $titulo = "paciente";
         session_start();
         isAuth();//valida la sesion
         $tipo = $_SESSION['tipo'];
-        $router->render('dasboard/panel',[
+        $router->render('dasboard/paciente',[
            'titulo'=>$titulo,
            'alertas'=>$alertas,
            'tipo'=>$tipo

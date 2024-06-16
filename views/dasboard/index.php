@@ -31,7 +31,7 @@
         <div class="item reporte">
             <div class="reporte-dato">
                 <h3>reportes</h3>
-                <p>reporte de tu actividad</p>
+                <p>reportes de todas tus actividades </p>
             </div>
              <div>
              <img src="img/icons/grafico.png" alt="">
@@ -61,7 +61,6 @@
             </div>
         </div>
     </div>
-
  </div>
 <!-- fin del contenido -->
 <?php include_once __DIR__.'/../dasboard/footerDasboard.php';?>
