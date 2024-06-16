@@ -10,7 +10,8 @@
     
     <div class="usuario">
         <div class="foto"> <img src="img/icons/perfi.png" alt="usuario-imagen"></div>
-        <p>usuario</p>
+        <?php if($tipo=="1"){?> <p>Medico</p> <?php }?>
+        <?php if($tipo=="2"){?> <p>Paciente</p> <?php }?>
         <div class="foto"> <img src="img/icons/campana.png" alt="campana"></div>
         <a href="/logout" class="cerrar-sesion">cerrar sesion</a>
     </div>

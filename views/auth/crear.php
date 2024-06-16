@@ -10,8 +10,8 @@
     <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
     <div class="tipo">
         <p>Eres un</p>
-        <label for="paciente"> <input  type="radio" name="tipo" value="1"> paciente</label>
-        <label for="medico"> <input  type="radio" name="tipo" value="2"> medico</label>
+        <label for="paciente"> <input  type="radio" name="tipo" value="2"> paciente</label>
+        <label for="medico"> <input  type="radio" name="tipo" value="1"> medico</label>
     </div>
     <input class="botons  miBoton" type="submit" value="Registrarme">
   </form>

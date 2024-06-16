@@ -47,22 +47,10 @@
         }
     }
 
-    .campo-tabla{
-        margin-top: 2rem;
-        border: solid 1px black;
-        border-radius: 1rem;
-        height: 30rem;
-        overflow-y: scroll;
-        position: relative;
+   .height{
+    height: 30rem;
+   }
         .table{
-            position: relative;
-            border: solid 1px black;
-            border-radius: 10px;
-            tr{
-                td{
-                    align-items: center;
-                }
-            }
           .tabla-acciones{
             display: flex;
             align-items: center;
@@ -88,7 +76,7 @@
         }
     }
 
-}
+
 
 .rigth{
     display: flex;
@@ -121,4 +109,57 @@
       }
   .modal-dialog{
     max-width: 700px;
+  }
+
+  .perfil-paciente{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    .foto{
+        width: 30rem;
+    }
+    .boton-camara{
+       text-align: center;
+       margin-right: 10rem;
+    }
+    .campo-2{
+        .item-campo2{
+            display: block;
+            label{
+                font-size: 2rem;
+            }
+            input{
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            textarea{
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .campo-3{
+        position: absolute;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 2rem;
+        bottom: 0;
+        right: 10rem;
+       .btn{
+          width: auto;
+          font-size: 2rem;
+          
+       }
+    }
+    
   }

@@ -35,7 +35,11 @@
                     <fieldset>
 
                         <div>
-                            <label>Apellido</label>
+                            <label>Apellido Paterno</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>Apellido Materno</label>
                             <input type="text">
                         </div>
                         <div>
@@ -48,31 +52,34 @@
                             <input type="text">
                         </div>
                         <div>
-                            <label>correo electronico</label>
+                            <label>Correo electronico</label>
                             <input type="text">
                         </div>
                         <div>
-                            <label>sexo</label>
+                            <label>Sexo</label>
                             <input type="text">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
-                            <label>fecha de nacimiento</label>
+                            <label>Fecha de nacimiento</label>
                             <input type="text">
                         </div>
                         <div>
-                            <label>pais</label>
+                            <label>Nacionalidad</label>
                             <input type="text">
                         </div>
                         <div>
-                            <label>ciudad</label>
+                            <label>Provincia</label>
                             <input type="text">
                         </div>
                         <div>
-                            <label>direccion</label>
+                            <label>Municipio</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>Direcion/ Calle y #</label>
                             <textarea name="" id="" rows="5">
-
                             </textarea>
                         </div>
                     </fieldset>

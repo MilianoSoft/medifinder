@@ -37,9 +37,9 @@
     </div>
   </div> <!-- fin de botones -->
 
-  <div class="campo-tabla">
-    <table class="table">
-      <thead class="table-info table-head">
+  <div class="shadow-none p-3 mb-5 bg-light rounded height">
+    <table class=" table table-hover">
+      <thead>
         <tr>
           <th scope="col">#</th>
           <th scope="col">No Exp</th>
@@ -61,7 +61,7 @@
           <td>masculino</td>
           <td>04/09/1998</td>
           <td class="tabla-acciones">
-                <div class="tabla-boton"><img class="img1" src="/img/icons/usuario-editar.png" alt="imagen-buscar">editar</div>
+                <div class="tabla-boton" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="img1" src="/img/icons/usuario-editar.png" alt="imagen-buscar">editar</div>
                 <div class="tabla-boton"><img class="img1" src="/img/icons/borrar-usuario.png" alt="imagen-buscar">eliminar</div>
           </td>
         </tr>

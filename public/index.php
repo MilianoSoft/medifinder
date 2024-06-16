@@ -11,7 +11,7 @@ $router = new Router();
 //accedemos a la pagina principal 
 
 //RUTAS DEL LOGIN DEL SISTEMA
-$router->get('/',[LoginController::class,'home']);
+$router->get('/',[LoginController::class,'login']);
 //metodo para llamar el login
 $router->get('/login',[LoginController::class,'login']);
 //metodo para enviar el login
