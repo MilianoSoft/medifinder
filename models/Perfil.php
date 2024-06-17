@@ -24,7 +24,7 @@ class Perfil extends ActiveRecord{
         $this->provincia = $arg['provincia']?? null;
         $this->municipio = $arg['municipio']?? null;
         $this->direcion = $arg['direcion']?? null;
-        $this->imgen = $arg['imagen']?? null;
+        $this->imagen = $arg['imagen']??"sin-foto";
 
     }
 

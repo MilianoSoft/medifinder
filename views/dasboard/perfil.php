@@ -9,7 +9,7 @@
 
 <?php if ($tipo == "2") : ?>
     <div class="contenido">
-        <form class=" perfil-paciente" action="/perfil" method="post">
+        <form class=" perfil-paciente" action="/perfil" method="post" enctype="multipart/form-data">
             <fieldset class="campo-2">
                 <input type="text" hidden value="<?php echo($usuario->id);?>" name="id_paciente">
                 <div class="item-campo2">
@@ -66,17 +66,18 @@
                 </div>
                 <div class="item-campo2">
                     <label>Direcion/ Calle y #</label>
-                    <textarea name="" id="" rows="5" value="<?php echo($perfil->direcion);?>" name="direcion">
+                    <textarea name="" id="" rows="5" name="direcion">
+                    <?php echo($perfil->direcion);?>
                             </textarea>
                 </div>
             </fieldset>
             <fieldset>
                 <div class="foto">
-                    <img class="img1" src="/img/icons/sin-foto.png" alt="foto-imagen">
+                    <img class="img1" src="/img/img-perfil/<?php echo($perfil->imagen);?>.png" alt="foto-imagen">
                 </div>
                 <div class="boton-camara">
-                    <div class="file-select" id="foto-paciente">
-                        <input type="file" name="foto-paciente" aria-label="Archivo">
+                    <div class="file-select" id="filetest">
+                        <input type="file" name="fileTest" aria-label="subir tu foto">
                     </div>
                 </div>
             </fieldset>
