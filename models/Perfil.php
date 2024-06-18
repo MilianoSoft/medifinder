@@ -24,9 +24,17 @@ class Perfil extends ActiveRecord{
         $this->provincia = $arg['provincia']?? null;
         $this->municipio = $arg['municipio']?? null;
         $this->direcion = $arg['direcion']?? null;
-        $this->imagen = $arg['imagen']??"sin-foto";
+        $this->imagen = $arg['imagen']??'sin-foto';
 
     }
 
+    public function sincronizar1($args){
+
+        foreach($args as $key => $value) {
+            if(property_exists($this, $key) && !is_null($value)) {
+              $this->$key = $value;
+            }
+          }
+    }
     
 }

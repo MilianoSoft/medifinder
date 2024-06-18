@@ -40,23 +40,32 @@ class DasboardController extends ActiveRecord
     //metodo del perfl del usuario
     public static function perfil(Router $router)
     {
-        $perfil = new Perfil();
+        $alertas =[];
         $titulo = 'perfil';
         session_start();
         $tipo = $_SESSION['tipo'];
         $email = $_SESSION['email'];
         isAuth(); //valida la sesion
-        //obtengo los datos iniciales
-        $usuario = Usuario::where('email', $email);
+         //obtengo los datos iniciales
+         $usuario = Usuario::where('email', $email);
+        $perfil = Perfil::where('id_paciente', $usuario->id);
+        // si el perfil esta vacio  dejamos los campose en blanco
+        if(empty($perfil)){
+            $perfil = new Perfil();
+        }
 
+        //si el metodo es post se envian los datos
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $perfil = new Perfil($_POST);
-            // obtenemos la imagen que viene el servidor 
-
+           
+            $perfil->sincronizar1($_POST); //sincronizo los datos de post con la clase de perfil
 
             
-            $file = $_FILES["fileTest"]["name"]; //Nombre de nuestro archivo
+            // obtenemos la imagen que viene el servidor 
 
+            $file = $_FILES["fileTest"]["name"]; //Nombre de nuestro archivo
+            $nombreImagen = $usuario->nombre.uniqid();
+            $perfil->imagen= $nombreImagen??'sin-foto';
+            $file = $nombreImagen.'.png';
             
             $url_temp = $_FILES["fileTest"]["tmp_name"]; //Ruta temporal a donde se carga el archivo 
 
@@ -73,21 +82,23 @@ class DasboardController extends ActiveRecord
 
             //movemos el archivo de la carpeta temporal a la carpeta objetivo y verificamos si fue exitoso
             if (move_uploaded_file($url_temp, $url_target)) {
-                echo "El archivo " . htmlspecialchars(basename($file)) . " ha sido cargado con éxito.";
+                $resultado = $perfil->guardar();
+                if(!empty( $resultado)){
+                   
+                }else{
+                   
+                }
             } else {
-                echo "Ha habido un error al cargar tu archivo.";
+              
             }
 
-
-
-
-            debuguear($perfil);
         }
         $router->render('dasboard/perfil', [
             'usuario' => $usuario,
             'titulo' => $titulo,
             'tipo' => $tipo,
-            'perfil' => $perfil
+            'perfil' => $perfil,
+            'alertas'=>$alertas
         ]);
     }
 }

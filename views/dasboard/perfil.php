@@ -9,6 +9,7 @@
 
 <?php if ($tipo == "2") : ?>
     <div class="contenido">
+
         <form class=" perfil-paciente" action="/perfil" method="post" enctype="multipart/form-data">
             <fieldset class="campo-2">
                 <input type="text" hidden value="<?php echo($usuario->id);?>" name="id_paciente">
@@ -66,9 +67,9 @@
                 </div>
                 <div class="item-campo2">
                     <label>Direcion/ Calle y #</label>
-                    <textarea name="" id="" rows="5" name="direcion">
+                    <textarea  rows="5" name="direcion">
                     <?php echo($perfil->direcion);?>
-                            </textarea>
+                    </textarea>
                 </div>
             </fieldset>
             <fieldset>

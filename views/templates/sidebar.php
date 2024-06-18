@@ -45,11 +45,12 @@
        <p> <?php echo( $_SESSION['nombre']);?></p>
     </div>
 </div>
-   <a class="<?php echo ($titulo == 'cita') ? 'activo' : ''; ?>" href="#">
-       <div class="icono"><img src="/img/icons/citas.png" alt="icono-cita"></div>Mi Citas
+
+<a class="<?php echo ($titulo == 'dasboard') ? 'activo' : ''; ?>" href="/dasboard">
+       <div class="icono"><img src="/img/icons/dasboard.png" alt="icono-tablero"></div>Tablero
    </a>
    <a class="<?php echo ($titulo == 'cita') ? 'activo' : ''; ?>" href="#">
-       <div class="icono"><img src="/img/icons/cita.png" alt="icono-cita"></div>Agendar una cita
+       <div class="icono"><img src="/img/icons/citas.png" alt="icono-cita"></div>Mi Citas
    </a>
    <a class="<?php echo ($titulo == 'cita') ? 'activo' : ''; ?>" href="#">
        <div class="icono"><img src="/img/icons/medicos.png" alt="icono-cita"></div>Todos los medicos

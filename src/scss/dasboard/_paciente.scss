@@ -163,3 +163,78 @@
     }
     
   }
+
+.dasboard-paciente{
+    text-align: center;
+    .flex{
+        display: flex;
+       justify-content: center;
+       column-gap: 4rem;
+       margin-bottom: 2rem;
+       
+        .flex-azul{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+                margin: 0;
+            }
+            .flex-3-botones{
+                margin: 0;
+                display: flex;
+                text-decoration: none;
+                text-transform: capitalize;
+                justify-content: space-around;
+                align-items: center;
+                a{
+                    padding: 2rem;
+                }
+            }
+            .imagen{
+                width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .citas{
+        margin: 3rem;
+        margin-top: -2rem;
+        height: 30rem;
+        table{
+            thead {
+            th {
+                background-color: #f2f2f2; /* Color de fondo de la cabecera */
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                padding: 1rem;
+            }
+            }
+            .acciones{
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 2rem;
+            }
+        }
+    }
+  }
+
+
+  .etiqueta {
+    background-color: rgb(165, 192, 126); /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 2px 2px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5rem 0 0 5rem ;
+}
+
+
