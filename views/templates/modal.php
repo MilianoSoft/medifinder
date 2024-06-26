@@ -17,7 +17,7 @@
                 <form class="perfil">
                 <fieldset> 
                         <div class="foto">
-                            <img class="img1" src="/img/icons/sin-foto.png" alt="foto-imagen">
+                            <img class="img1" src="/img/img-perfil/sin-foto.png" alt="foto-imagen">
                         </div>
                         <div class="boton-camara">
                             <img class="img1" src="/img/icons/camara.png" alt="foto-imagen">

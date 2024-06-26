@@ -1,12 +1,6 @@
 <?php include_once __DIR__ . '/headerDasboard.php'; ?>
 <!-- aqui ira el contenido -->
 
-<?php if ($tipo == "1") : ?>
-    <h2>desde perfil</h2>
-<?php endif; ?>
-
-<!-- fin de medico -->
-
 <?php if ($tipo == "2") : ?>
     <div class="contenido">
 

@@ -37,6 +37,9 @@ img {
 .img1{
     width: 100%;
 }
+.gap{
+    column-gap: 2rem;
+}
 
 .file-select {
     position: relative;
@@ -72,3 +75,12 @@ img {
   #src-file2::before {
     content: 'Seleccionar Archivo 2';
   }
+
+  .etiqueta {
+       background-color: #5678EF; 
+      border-top-left-radius: 10rem;
+      border-bottom-left-radius: 10rem;
+      text-align: center;
+      color: white;
+      padding: .2rem;
+}

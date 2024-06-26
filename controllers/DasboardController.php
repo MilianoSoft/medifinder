@@ -101,4 +101,40 @@ class DasboardController extends ActiveRecord
             'alertas'=>$alertas
         ]);
     }
+
+    //metodo de la cita para el paciente
+    public static function citas(Router $router){
+
+        $alertas =[];
+        $titulo = 'citas';
+        session_start();
+        $tipo = $_SESSION['tipo'];
+        $email = $_SESSION['email'];
+        isAuth(); //valida la sesion
+         //obtengo los datos iniciales
+
+        $router->render('dasboard/citas', [
+            'titulo' => $titulo,
+            'tipo'=>$tipo,
+            'alertas'=>$alertas
+        ]);
+    }
+
+    //metodo de los medicos para el paciente
+    public static function citas(Router $router){
+
+        $alertas =[];
+        $titulo = 'citas';
+        session_start();
+        $tipo = $_SESSION['tipo'];
+        $email = $_SESSION['email'];
+        isAuth(); //valida la sesion
+         //obtengo los datos iniciales
+
+        $router->render('dasboard/citas', [
+            'titulo' => $titulo,
+            'tipo'=>$tipo,
+            'alertas'=>$alertas
+        ]);
+    }
 }

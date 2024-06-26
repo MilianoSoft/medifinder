@@ -46,16 +46,13 @@
     </div>
 </div>
 
-<a class="<?php echo ($titulo == 'dasboard') ? 'activo' : ''; ?>" href="/dasboard">
-       <div class="icono"><img src="/img/icons/dasboard.png" alt="icono-tablero"></div>Tablero
-   </a>
-   <a class="<?php echo ($titulo == 'cita') ? 'activo' : ''; ?>" href="#">
+   <a class="<?php echo ($titulo == 'cita') ? 'activo' : ''; ?>" href="/citas">
        <div class="icono"><img src="/img/icons/citas.png" alt="icono-cita"></div>Mi Citas
    </a>
-   <a class="<?php echo ($titulo == 'cita') ? 'activo' : ''; ?>" href="#">
+   <a class="<?php echo ($titulo == 'doctores') ? 'activo' : ''; ?>" href="/doctores">
        <div class="icono"><img src="/img/icons/medicos.png" alt="icono-cita"></div>Todos los medicos
    </a>
-   <a class="<?php echo ($titulo == 'reporte') ? 'activo' : ''; ?>" href="/perfil">
+   <a class="<?php echo ($titulo == 'perfil') ? 'activo' : ''; ?>" href="/perfil">
        <div class="icono"><img src="/img/icons/perfil.png" alt="icono-reporte"></div> Mi perfil
    </a>
 

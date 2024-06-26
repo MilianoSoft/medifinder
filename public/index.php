@@ -48,6 +48,10 @@ $router->get('/paciente',[DasboardController::class,'paciente']);
 $router->post('/paciente',[DasboardController::class,'paciente']);
 $router->get('/perfil',[DasboardController::class,'perfil']);
 $router->post('/perfil',[DasboardController::class,'perfil']);
+$router->get('/citas',[DasboardController::class,'citas']);
+$router->post('/citas',[DasboardController::class,'citas']);
+$router->get('/medicos',[DasboardController::class,'medico']);
+$router->post('/medicos',[DasboardController::class,'medico']);
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();
